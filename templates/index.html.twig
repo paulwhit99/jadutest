@@ -26,13 +26,13 @@
 				</div>
 				<form id="palindrome" action="/palindrome" class="active">
 					<h2>Palindrome</h2>
-					<p>Enter a name in the box below and press enter to see if it is a
+					<p>Enter a word in the box below and press enter to see if it is a
 						<a href="#" rel="alert" data-title="What is a palindrome?" data-message="A word, phrase, or sequence that reads the same backwards as forwards, e.g. madam or nurses run.">
 							palindrome.
 						</a>
 					</p>
 					<div class="field">
-						<label for="palindromeInput">Name</label>
+						<label for="palindromeInput">Word</label>
 						<input type="text" id="palindromeInput" name="word">
 					</div>
 					<div class="button-container">
@@ -51,11 +51,11 @@
 						of the other.
 					</p>
 					<div class="field">
-						<label for="anagraminput1">String 1</label>
+						<label for="anagraminput1">Word</label>
 						<input type="text" name="word" id="anagraminput1">
 					</div>
 					<div class="field">
-						<label for="anagraminput2">String 2</label>
+						<label for="anagraminput2">Comparison</label>
 						<input type="text" name="comparison" id="anagraminput2">
 					</div>
 					<div class="button-container">
@@ -67,13 +67,14 @@
 				</form>
 				<form id="pangram" action="/pangram">
 					<h2>Panagram</h2>
-					<p>Enter a sentence in the box below and press enter to see if it is a
+					<p>Enter a phrase in the box below and press enter to see if it is a
 						<a href="#" rel="alert" data-title="What is a pangram?" data-message="A sentence that contains every letter of the alphabet, if possible with each letter only being used once.">
 							pangram.
 						</a>
 					</p>
 					<div class="field">
-						<textarea name="phrase" rows="5"></textarea>
+						<label for="pangramPhrase">Phrase</label>
+						<textarea id="pangramPhrase" name="phrase" rows="5"></textarea>
 					</div>
 					<div class="button-container">
 						<button>
