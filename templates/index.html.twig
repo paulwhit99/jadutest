@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Paul Whittington - word test</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>"> {% block stylesheets %}{% endblock %}{% block javascripts %}{% endblock %}
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+		<link href="/_css/style.css" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/0f34512e67.js" crossorigin="anonymous"></script>
+		<script src="/_js/jquery.min.js" defer></script>
+		<script src="/_js/functions.js" defer></script>
+	</head>
+	<body>
+		<header>
+			<img src="/_img/logo.svg" alt="logo">
+		</header>
+		<section>
+			<div class="forms">
+				<div class="tabs">
+					<a href="#" data-target="palindrome" class="active">Palindrome</a>
+					<a href="#" data-target="anagram">Anagram</a>
+					<a href="#" data-target="pangram">Pangram</a>
+				</div>
+				<form id="palindrome" action="/palindrome" class="active">
+					<h2>Palindrome</h2>
+					<p>Enter a name in the box below and press enter to see if it is a
+						<a href="#" rel="alert" data-title="What is a palindrome?" data-message="A word, phrase, or sequence that reads the same backwards as forwards, e.g. madam or nurses run.">
+							palindrome.
+						</a>
+					</p>
+					<div class="field">
+						<label for="palindromeInput">Name</label>
+						<input type="text" id="palindromeInput" name="word">
+					</div>
+					<div class="button-container">
+						<button>
+							Enter
+							<i class="fa-light fa-angle-right"></i>
+						</button>
+					</div>
+				</form>
+				<form id="anagram" action="/anagram">
+					<h2>Anagram</h2>
+					<p>Enter a word in each box below and press enter to see if one is an
+						<a href="#" rel="alert" data-title="What is an anagram?" data-message="A word or phrase made by using the letters of another word or phrase in a different order.">
+							anagram
+						</a>
+						of the other.
+					</p>
+					<div class="field">
+						<label for="anagraminput1">String 1</label>
+						<input type="text" name="word" id="anagraminput1">
+					</div>
+					<div class="field">
+						<label for="anagraminput2">String 2</label>
+						<input type="text" name="comparison" id="anagraminput2">
+					</div>
+					<div class="button-container">
+						<button>
+							Enter
+							<i class="fa-light fa-angle-right"></i>
+						</button>
+					</div>
+				</form>
+				<form id="pangram" action="/pangram">
+					<h2>Panagram</h2>
+					<p>Enter a sentence in the box below and press enter to see if it is a
+						<a href="#" rel="alert" data-title="What is a pangram?" data-message="A sentence that contains every letter of the alphabet, if possible with each letter only being used once.">
+							pangram.
+						</a>
+					</p>
+					<div class="field">
+						<textarea name="phrase" rows="5"></textarea>
+					</div>
+					<div class="button-container">
+						<button>
+							Enter
+							<i class="fa-light fa-angle-right"></i>
+						</button>
+					</div>
+				</form>
+			</div>
+		</section>
+		<footer>
+			<div class="links">
+				<a href="mailto:paul@populate.co.uk" class="fa-light fa-envelope" alt="Email Paul"></a>
+				<a href="#" rel="alert" data-title="<i class='fa fa-phone'></i> 07711 628237" data-message="" class="fa-light fa-phone" alt="Call Paul"></a>
+				<a href="https://www.linkedin.com/in/pwhittington/" target="_blank" class="fa-brands fa-linkedin-in" alt="Paul's linked in"></a>
+				<a href="/paul-whittington-CV.pdf" target="_blank" class="fa-light fa-memo" alt="Paul's CV"></a>
+			</div>
+			<div class="strap">
+				&copy; 2024 Paul Whittington
+			</div>
+		</footer>
+	</body>
+</html>
