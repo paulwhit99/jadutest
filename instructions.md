@@ -1,4 +1,7 @@
-To move this to alocal repo
+
+<h1>Deployment instructions</h1>
+
+<b>To move this to a local repo:</b><br>
 
 First, navigate to the directory that you would like to clone the repository into using commands like:
 cd: to change your working directory.
