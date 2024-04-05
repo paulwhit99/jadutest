@@ -1,4 +1,4 @@
-<h1>Weclome to Jadu test</h1> 
+<h1>Welcome to Jadu test</h1> 
 <ul>
 <li>App name: Jadu test</li>
 <li>Customer: None - Jadu</li>
