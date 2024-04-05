@@ -1,4 +1,4 @@
-<h1>Time breakdown for the porject</h1>
+<h1>Time breakdown for the project</h1>
 
 Getting local machine set up for running symfony in vscode, getting up and working with symfony and trying to work out best practices 3 hours<br>
 Coding the validation functions - 20 mins<br>
