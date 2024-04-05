@@ -13,7 +13,8 @@ A basic test to test the validity of 3 language tools: palindrome, anagram and p
 <p>
 Wrtten with PHP, javascript (Jquery)<br>
 Syphony is used for the server-side code, using twig templates<br>
-CSS was coded manually, without SASS etc becuase of the size of the porject.
+CSS was coded manually, without SASS etc becuase of the small size of the project.
+Did not use boostrap/tailwind etc to demo hand coding.
 </p>
 <p>
 The /templates/index,html.twig contains theress forms. Jquery hijacks the submission of these forms and submits them via an Ajax request to three endpoints /palindrom, /anagram and /pangram.<br>
