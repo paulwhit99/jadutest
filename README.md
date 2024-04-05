@@ -11,12 +11,12 @@
 A basic test to test the validity of 3 language tools: palindrome, anagram and pangram<br>
 </p>
 <p>
-Wrtten with PHP, javascript (Jquery)
-Syphony is used for the server-side code, using twig templates
+Wrtten with PHP, javascript (Jquery)<br>
+Syphony is used for the server-side code, using twig templates<br>
 CSS was coded manually, without SASS etc becuase of the size of the porject.
 </p>
 <p>
-The /templates/index,html.twig contains theress forms. Jquery hijacks the submission of these forms and submits them via an Ajax request to three endpoints /palindrom, /anagram and /pangram
+The /templates/index,html.twig contains theress forms. Jquery hijacks the submission of these forms and submits them via an Ajax request to three endpoints /palindrom, /anagram and /pangram.<br>
 These endpoints use a class created in /src/Checker.php to test the validity of the word/phrase and return a json object with a true/false value which the javascript then uses to render a message on top of the original form
 Logically this validation could be performed in the browser with javascript but the breif required this to be done on the server with PHP
 </p>
