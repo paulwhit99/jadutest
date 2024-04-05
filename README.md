@@ -17,8 +17,8 @@ CSS was coded manually, without SASS etc becuase of the small size of the projec
 Did not use boostrap/tailwind etc to demo hand coding.
 </p>
 <p>
-The /templates/index,html.twig contains theress forms. Jquery hijacks the submission of these forms and submits them via an Ajax request to three endpoints /palindrom, /anagram and /pangram.<br>
-These endpoints use a class created in /src/Checker.php to test the validity of the word/phrase and return a json object with a true/false value which the javascript then uses to render a message on top of the original form.<br>
+The /templates/index,html.twig contains three forms. Jquery hijacks the submission of these forms and submits them via an Ajax request to three endpoints /palindrom, /anagram and /pangram.<br>
+These endpoints use three public functions in a class created in /src/Checker.php to test the validity of the word/phrase and return a json object with a true/false value which the javascript(jQuery) then uses to render a message on top of the original form.<br>
 Logically this validation could be performed in the browser with javascript but the brief required this to be done on the server with PHP.
 </p>
 <p>
