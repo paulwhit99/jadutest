@@ -11,7 +11,7 @@
 A basic test to test the validity of 3 language tools: palindrome, anagram and pangram<br>
 </p>
 <p>
-Wrtten with PHP, javascript (Jquery).<br>
+Written with PHP, javascript (Jquery).<br>
 Syphony is used for the server-side code, using twig templates.<br>
 CSS was coded manually, without SASS etc becuase of the small size of the project.<br>
 Did not use boostrap/tailwind etc to demo hand coding.
