@@ -25,19 +25,24 @@ $.fn.setUpContent = function(){
 		return false;
 	})
 	$(this).find(".forms form").on("submit", function(e){
+		$(this).addClass("waiting");
 		$.ajax({
 	 		url: $(this).attr("action"),
 			data: $( this ).serialize(),
+			context: this,
 			method: "POST"
 	 	}).done(function(json, status, xhr) {
+			setTimeout((_this) => {
+				$(_this).removeClass("waiting");
+			}, 1500, this);
 			var result = $("<div>", {class:"result"}).appendTo($("body"));
 			if (json.result){
 				$(result).addClass("success").append($("<div>").append($("<i>", {class: "fa-solid fa-check"})));
 			} else {
 				$(result).addClass("fail").append($("<div>").append($("<i>", {class: "fa-solid fa-xmark"})));
 			}
-			setTimeout(() => {
-				$(result).remove();
+			setTimeout((_result) => {
+				$(_result).remove();
 			}, 1500, result);		
 	 	})
 		e.preventDefault();
