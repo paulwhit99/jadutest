@@ -16,6 +16,7 @@ class Checker implements CheckerInterface
     public function isPalindrome(string $word): bool
     {
         $word = strtolower(trim($word));
+        $word = str_replace(" ", "", $word);
         if ($word == "") {
             return false;
         }
