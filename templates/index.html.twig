@@ -24,7 +24,7 @@
 					<a href="#" data-target="anagram">Anagram</a>
 					<a href="#" data-target="pangram">Pangram</a>
 				</div>
-				<form id="palindrome" action="/palindrome" class="active">
+				<form id="palindrome" action="/palindrome" class="active" method="post">
 					<h2>Palindrome</h2>
 					<p>Enter a word in the box below and press enter to see if it is a
 						<a href="#" rel="alert" data-title="What is a palindrome?" data-message="A word, phrase, or sequence that reads the same backwards as forwards, e.g. madam or nurses run.">
@@ -43,7 +43,7 @@
 						</button>
 					</div>
 				</form>
-				<form id="anagram" action="/anagram">
+				<form id="anagram" action="/anagram" method="post">
 					<h2>Anagram</h2>
 					<p>Enter a word in each box below and press enter to see if one is an
 						<a href="#" rel="alert" data-title="What is an anagram?" data-message="A word or phrase made by using the letters of another word or phrase in a different order.">
@@ -67,7 +67,7 @@
 						</button>
 					</div>
 				</form>
-				<form id="pangram" action="/pangram">
+				<form id="pangram" action="/pangram" method="post">
 					<h2>Panagram</h2>
 					<p>Enter a phrase in the box below and press enter to see if it is a
 						<a href="#" rel="alert" data-title="What is a pangram?" data-message="A sentence that contains every letter of the alphabet, if possible with each letter only being used once.">
