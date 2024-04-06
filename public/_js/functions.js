@@ -34,7 +34,7 @@ $.fn.setUpContent = function(){
 	 	}).done(function(json, status, xhr) {
 			setTimeout((_this) => {
 				$(_this).removeClass("waiting");
-			}, 1500, this);
+			}, 300, this);
 			var result = $("<div>", {class:"result"}).appendTo($("body"));
 			if (json.result){
 				$(result).addClass("success").append($("<div>").append($("<i>", {class: "fa-solid fa-check"})));
